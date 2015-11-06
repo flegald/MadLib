@@ -1,10 +1,27 @@
-$(document).ready(function(){
-	$('.collider').draggable();
-});
 
 
 $(document).ready(function(){
-if( $('.collider').collision('.obstacle', function(){
-console.log('ok');
-}));
+	$('.nounDrag').draggable();
+	$('.nounTar').droppable({
+            drop: function( event, ui ) {
+               $(this)
+               .addClass( "dropped" )
+               .find( "p" )
+               .html( "Right" );
+            }
+         })
+
+
+$(document).ready(function(){
+	$('.verbDrag').draggable();
+	$('.nounTar').droppable({
+            drop: function( event, ui ) {
+               $(this)
+               .addClass( "dropped" )
+               .find( "p" )
+               .html( "Wrong" );
+            }
+         })
+})
+
 });
