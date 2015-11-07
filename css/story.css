@@ -17,6 +17,7 @@ p {
 	font-weight: bold;
 	background-color: white;
 	border: 2px solid black;
+	width: 5em;
 }
 
 .verbTar {
@@ -38,4 +39,14 @@ p {
 
 .dropped {
 	background-color: red;
+	width: 5em;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.nounDrag {
+	background-color: white;
+	width: 4em;
 }
